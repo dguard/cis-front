@@ -31,7 +31,7 @@ const WARN_AFTER_CHUNK_GZIP_SIZE = 1024 * 1024;
 function log(message) {
   const timestamp = moment(Number(new Date())).format('YYYY-MM-DD HH:mm:ss').trim();
   // eslint-disable-next-line no-console
-  console.log(`${chalk.cyan("[trinity-web]")} ${chalk.magenta(timestamp)} [build] - ${message}`);
+  console.log(`${chalk.cyan("[cis-web]")} ${chalk.magenta(timestamp)} [build] - ${message}`);
 }
 
 let startedTime;
