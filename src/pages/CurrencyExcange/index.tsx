@@ -164,7 +164,7 @@ const CurrencyExchange: React.FC<IProps> = (props) => {
             </div>
             <div className="control-container">
               <div className="title">Amount</div>
-              <div><input type="number" onChange={(event) => setSelectedAmount(event.currentTarget.value)} value={selectedAmount}/></div>
+              <div><input type="number" onChange={(event) => { setSelectedAmount(Number(event.currentTarget.value)); updateConvertedValue(event.currentTarget.value, targetCurrency, mapExchangeRate) }} value={selectedAmount}/></div>
             </div>
             <div className="control-container">
               <div className="title">Target Currency</div>
