@@ -85,6 +85,10 @@ const CurrencyExchange: React.FC<IProps> = (props) => {
           newMapExchangeRate[item['id']] = item;
         });
         setMapExchangeRate(newMapExchangeRate);
+
+        setTargetCurrency('R01235');
+
+        updateConvertedValue(selectedAmount, 'R01235', newMapExchangeRate);
       });
     }
   });
@@ -133,12 +137,16 @@ const CurrencyExchange: React.FC<IProps> = (props) => {
       return;
     }
     setTargetCurrency(event.currentTarget.value);
+    updateConvertedValue(selectedAmount, event.currentTarget.value, mapExchangeRate);
+  };
 
-    if(selectedAmount) {
-      const newConvertedValue = (selectedAmount / mapExchangeRate[event.currentTarget.value]['value']).toFixed(3);
+  const updateConvertedValue = (selectedAmount, targetCurrency, passedMapExchangeRate) => {
+    if(selectedAmount && targetCurrency && passedMapExchangeRate) {
+      const newConvertedValue = (selectedAmount / passedMapExchangeRate[targetCurrency]['value']).toFixed(5);
       setConvertedValue(newConvertedValue);
     }
   };
+
 
 
   return (
@@ -156,7 +164,7 @@ const CurrencyExchange: React.FC<IProps> = (props) => {
             </div>
             <div className="control-container">
               <div className="title">Amount</div>
-              <div><input type="text" value={selectedAmount}/></div>
+              <div><input type="number" onChange={(event) => setSelectedAmount(event.currentTarget.value)} value={selectedAmount}/></div>
             </div>
             <div className="control-container">
               <div className="title">Target Currency</div>
@@ -164,7 +172,7 @@ const CurrencyExchange: React.FC<IProps> = (props) => {
                 <select value={targetCurrency} onChange={(event) => { updateCalculation(event); }}>
                   <option value="">Not selected</option>
                   {listExchangeRate && listExchangeRate['items'].map((item) => {
-                      return (<option value={item['id']}>{ item['name'] }</option>)
+                      return (<option key={item['id']} value={item['id']}>{ item['name'] }</option>)
                     })
                   }
                 </select>
@@ -174,7 +182,7 @@ const CurrencyExchange: React.FC<IProps> = (props) => {
 
             <div>
               <div className="title">Converted Value</div>
-              <div><input type="text" value={convertedValue} /></div>
+              <div><input type="text" defaultValue={convertedValue} /></div>
             </div>
           </div>
 
