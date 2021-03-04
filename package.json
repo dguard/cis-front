@@ -1,8 +1,9 @@
 {
   "name": "cis-front",
   "version": "0.0.1",
-  "private": true,
-  "author": "",
+  "description": "React MobX API Websocket repository",
+  "author": "Alexander Serditov",
+  "repository": "https://github.com/dguard/cis-front",
   "scripts": {
     "start": "serve -s build -l 3000",
     "dev": "cross-env PORT=3000 REACT_APP_API_HOST=http://localhost:8888 NODE_ENV=development ./bin/react-scripts.js start",
