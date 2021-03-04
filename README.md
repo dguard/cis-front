@@ -6,6 +6,8 @@
 ## Description
 [React](https://reactjs.org/) is a JavaScript library for building user interfaces.
 
+[DEMO](https://cis.digitallyconstructed.ru/)
+
 ### \>CIS
 
 [API](https://github.com/dguard/cis-api)
