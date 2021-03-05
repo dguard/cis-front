@@ -6,7 +6,7 @@
   "repository": "https://github.com/dguard/cis-front",
   "scripts": {
     "start": "serve -s build -l 3000",
-    "dev": "cross-env PORT=3000 REACT_APP_API_HOST=http://localhost:8888 NODE_ENV=development ./bin/react-scripts.js start",
+    "dev": "cross-env PORT=3000 REACT_APP_API_HOST=http://localhost:8888 REACT_GRAPHQL_API_HOST=http://localhost:8892 NODE_ENV=development ./bin/react-scripts.js start",
     "build": "cross-env PORT=3000 REACT_APP_API_HOST=http://localhost:8888 NODE_ENV=production ./bin/react-scripts.js build",
     "postinstall": "node tools/postinstall.js"
   },

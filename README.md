@@ -6,7 +6,8 @@
 ## Description
 [React](https://reactjs.org/) is a JavaScript library for building user interfaces.
 
-[DEMO](https://cis.digitallyconstructed.ru/)
+[DEMO exchange-rate](https://cis.digitallyconstructed.ru/)
+[DEMO graphql](https://cis.digitallyconstructed.ru/graphql)
 
 ### \>CIS
 
