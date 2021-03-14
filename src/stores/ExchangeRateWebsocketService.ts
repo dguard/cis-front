@@ -35,7 +35,7 @@ class ExchangeRateWebsocketService {
 
     tryToConnect() {
         return new Promise((resolve, reject)=>{
-            socket = new WebSocket(`${process.env.WEBSOCKET_HOST}`);
+            socket = new WebSocket(`${process.env.REACT_APP_WEBSOCKET_HOST}`);
             socket.onerror = function (error) {
                 reject(error);
             };

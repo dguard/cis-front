@@ -26,6 +26,16 @@
 [Consumer Webhook](https://github.com/dguard/cis-consumer-webhook)
 
 
+## Captures
+<p align="center">
+  <img src="/captures/currency-exchange-service.png" alt="screenshot" />
+</p>
+<p align="center">
+  <img src="/captures/graphql.png" alt="screenshot" />
+</p>
+
+
+
 ## Installation
 
 ```bash
