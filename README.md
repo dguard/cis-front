@@ -7,23 +7,19 @@
 [React](https://reactjs.org/) is a JavaScript library for building user interfaces.
 
 [DEMO exchange-rate](https://cis.digitallyconstructed.ru/)
+
 [DEMO graphql](https://cis.digitallyconstructed.ru/graphql)
 
-### \>CIS
 
-[API](https://github.com/dguard/cis-api)
-
-\>Frontend
-
-[Worker](https://github.com/dguard/cis-worker)
-
-### CIS Webhook
-
-[Webhook API](https://github.com/dguard/cis-webhook-api)
-
-[Webhook Worker](https://github.com/dguard/cis-webhook-worker)
-
-[Consumer Webhook](https://github.com/dguard/cis-consumer-webhook)
+| Service | Repo |
+| --- | --- |
+| API 📦 | [cis-api](https://github.com/dguard/cis-api) |
+| Frontend 📦 | cis-front (you are inside) |
+| Worker 🐍| [cis-worker](https://github.com/dguard/cis-worker) |
+|  📦 |  |
+| Webhook API 🐍| [cis-webhook-api](https://github.com/dguard/cis-webhook-api) |
+| Webhook Worker 🐍| [cis-webhook-worker](https://github.com/dguard/cis-webhook-worker) |
+| Consumer Webhook 🐍| [cis-consumer-webhook](https://github.com/dguard/cis-consumer-webhook) |
 
 
 ## Captures
