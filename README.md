@@ -35,6 +35,8 @@
 
 ## Installation
 
+Update `.env` file  based on `.env.sample`
+
 ```bash
 $ yarn
 ```
