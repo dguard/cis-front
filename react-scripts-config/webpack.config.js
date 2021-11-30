@@ -412,7 +412,7 @@ module.exports = function(webpackEnv) {
         filename: 'static/css/[name].[contenthash:8].css',
         chunkFilename: 'static/css/[name].[contenthash:8].chunk.css',
       }),
-      new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
+      //new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
     ].filter(Boolean),
     performance: false,
   };
